@@ -47,7 +47,7 @@ void daLiftBgRotation_c::executeMovement() {
 
 int daLiftBgRotation_c::create() {
     int result = daLiftBgBase_c::create();
-    if (result != 2) {
+    if (result == 1) {
         float diagonal = sqrtf(mWidth * mWidth + mHeight * mHeight) * 16.0f;
         mVisibleAreaSize.set(diagonal, diagonal);
     }
